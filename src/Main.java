@@ -20,29 +20,37 @@ public class Main {
         firstArr[0] = 1;
         firstArr[1] = 2;
         firstArr[2] = 3;
-        System.out.print(firstArr[0]);
-        for (int i = 1; i < 3; ++i)
-        {System.out.print(" , " + firstArr[i]);}
+
+        for (int i = 0; i < 3; ++i)
+            if (i <= 0) {
+                System.out.print(firstArr[0]);
+            } else {
+                System.out.print(" , " + firstArr[i]);
+            }
+
 
         System.out.println();
 
-        System.out.print(secondArr[0]);
-        for (int j = 1; j < 3; j++) {
-            System.out.print(" , " + secondArr[j]) ;
-        }
+        for ( int j = 0; j < 3; j++)
+            if (j <= 0) {
+            System.out.print(secondArr[0]);}
+        else {
+            System.out.print(" , " + secondArr[j]); }
         System.out.println();
 
-        System.out.print(thirdArr[0]);
-        for (int k = 1; k < 4; k++) {
-            System.out.print(" , " + thirdArr[k]);
 
-        }
+        for (int k = 0; k < 4; k++)
+             if (k <= 0) {System.out.print(thirdArr[0]); }
+              else {
+            System.out.print(" , " + thirdArr[k]); }
 
         System.out.println();
 
         System.out.println("Задание 3");
 
-        for (int i = firstArr.length - 1; i > 0; i--) {
+        for (
+                int i = firstArr.length - 1;
+                i > 0; i--) {
             System.out.print(firstArr[i] + " , ");
         }
         if (firstArr.length >= 1) {
@@ -50,7 +58,9 @@ public class Main {
         }
 
         System.out.println();
-        for (int j = secondArr.length - 1; j > 0; j--) {
+        for (
+                int j = secondArr.length - 1;
+                j > 0; j--) {
             System.out.print(secondArr[j] + " , ");
         }
         if (secondArr.length >= 1) {
@@ -59,8 +69,11 @@ public class Main {
 
         System.out.println();
 
-        for (int k = thirdArr.length - 1; k > 0; k--) {
-            System.out.print(+ thirdArr[k] + " , "); }
+        for (
+                int k = thirdArr.length - 1;
+                k > 0; k--) {
+            System.out.print(+thirdArr[k] + " , ");
+        }
         if (thirdArr.length >= 1) {
             System.out.print(thirdArr[0]);
         }
@@ -68,7 +81,11 @@ public class Main {
         System.out.println();
         System.out.println("Задание 4");
 
-        for (int i = 0; i <= 3; i++) ;
+        for (
+                int i = 0;
+                i <= 3; i++)
+            ;
+
         {
             System.out.print(firstArr[0] + 1 + " ");
             System.out.print(firstArr[1] + " ");
