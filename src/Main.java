@@ -53,28 +53,29 @@ public class Main {
 
         System.out.println("Задание 3");
 
-        for (int i = firstArr.length - 1; i > 0; i--)
-            System.out.print(firstArr[i] + " , ");
-        if (firstArr.length >= 1) {
-            System.out.print(firstArr[0]);
+        for (int i = firstArr.length - 1; i >= 0; i--) {
+            System.out.print(firstArr[i]);
+            if (i != 0)
+                System.out.print(" , ");
         }
 
 
         System.out.println();
-        for (int j = secondArr.length - 1; j > 0; j--) {
-            System.out.print(secondArr[j] + " , ");
-            if (secondArr.length >= 1) {
-                System.out.print(secondArr[0]);
+        for (int j = secondArr.length - 1; j >= 0; j--) {
+            System.out.print(secondArr[j]);
+            if (j != 0) {
+                System.out.print(" , ");
             }
         }
 
         System.out.println();
 
-        for (int k = thirdArr.length - 1; k > 0; k--) {
-            System.out.print(thirdArr[k] + " , ");
-        }
-        if (thirdArr.length >= 1) {
-            System.out.print(thirdArr[0]);
+        for (int k = thirdArr.length - 1; k >= 0; k--) {
+            System.out.print(thirdArr[k]);
+
+            if (k != 0) {
+                System.out.print(" , ");
+            }
         }
 
         System.out.println();
@@ -85,10 +86,13 @@ public class Main {
             if (firstArr[i] % 2 == 1) {
                 firstArr[i]++;
                 System.out.print(firstArr[i]);
-            } else { System.out.print(" , " + (firstArr[i]));
-                if (i != firstArr.length-1) {
+            } else {
+                System.out.print(" , " + (firstArr[i]));
+                if (i != firstArr.length - 1) {
                     System.out.print(" , ");
                 }
             }
+
     }
 }
+
