@@ -55,8 +55,9 @@ public class Main {
 
         for (int i = firstArr.length - 1; i >= 0; i--) {
             System.out.print(firstArr[i]);
-            if (i != 0)
+            if (i != 0) {
                 System.out.print(" , ");
+            }
         }
 
 
@@ -86,13 +87,10 @@ public class Main {
             if (firstArr[i] % 2 == 1) {
                 firstArr[i]++;
                 System.out.print(firstArr[i]);
-            } else {
-                System.out.print(" , " + (firstArr[i]));
                 if (i != firstArr.length - 1) {
-                    System.out.print(" , ");
+                    System.out.print(" , " + firstArr[i] + " , ");
                 }
             }
-
     }
 }
 
