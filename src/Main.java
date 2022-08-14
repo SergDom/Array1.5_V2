@@ -23,7 +23,7 @@ public class Main {
         firstArr[1] = 2;
         firstArr[2] = 3;
 
-        for (int i = 0; i < 3; ++i)
+        for (int i = 0; i < firstArr.length; ++i)
             if (i == 0) {
                 System.out.print(firstArr[i]);
             } else {
@@ -32,7 +32,7 @@ public class Main {
 
         System.out.println();
 
-        for (int j = 0; j < 3; j++)
+        for (int j = 0; j < secondArr.length; j++)
             if (j == 0) {
                 System.out.print(secondArr[j]);
             } else {
@@ -42,7 +42,7 @@ public class Main {
         System.out.println();
 
 
-        for (int k = 0; k < 4; k++)
+        for (int k = 0; k < thirdArr.length; k++)
             if (k == 0) {
                 System.out.print(thirdArr[k]);
             } else {
@@ -90,6 +90,5 @@ public class Main {
                     System.out.print(" , ");
                 }
             }
-
     }
 }
